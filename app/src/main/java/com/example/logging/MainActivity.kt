@@ -15,7 +15,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun logging() {
-        //a verbose log is something that can be removed after a feature is implemented
-        Log.v(TAG, "Hello, world!")
+        //adding types of errors
+        Log.e(TAG, "ERROR: a serious error like an app crash")
+        Log.w(TAG, "WARN: warns about the potential for serious errors")
+        Log.i(TAG, "INFO: reporting technical information, such as an operation succeeding")
+        Log.d(TAG, "DEBUG: reporting technical information useful for debugging")
+        Log.v(TAG, "VERBOSE: more verbose than DEBUG logs")
+
     }
 }
